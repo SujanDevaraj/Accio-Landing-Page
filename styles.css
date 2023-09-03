@@ -1,0 +1,361 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+</style>
+*{
+    font-family: 'ABeeZee', sans-serif !important;
+    overflow-x: hidden;
+}
+.navigation{
+    background:#FFF;
+    width: 100%;
+    z-index: 9998;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    position:fixed;
+    top: 0;
+    padding: 0 30px;
+}
+
+.nav-items>ul>li{
+padding-inline:30px ;
+}
+.nav-items>ul>li>button{
+    border-radius: 8px;
+border: 2px solid #2F80ED;
+width:80px;
+height: 40px;
+}
+.loginbtn{
+    color:#2F80ED;
+font-family: ABeeZee;
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+display: flex;
+padding: 15px 36px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8px;
+border: 2px solid #2F80ED;
+background-color: transparent;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: #2F80ED;
+    text-align: center;
+    padding: 8px;
+    color: #FFF;
+    font-family: 'ABeeZee', sans-serif;
+font-size: 14px;
+font-style: italic;
+font-weight: 400;
+margin-top:70px;
+z-index: 190;
+top:0
+}
+
+.my-card{
+width:400px;
+height: fit-content;
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: center;
+border-radius: 9px;
+border: 2px solid #2F80ED;
+background: #FFF;
+padding: 20px;
+
+}
+.course-type{
+    position: absolute;
+ left:200px;
+ top:35px;
+ color: var(--WHITE, #FFF);
+ font-family: ABeeZee;
+ font-size: 12px;
+ font-style: italic;
+ font-weight: 400;
+ line-height: normal;
+ text-transform: uppercase;
+ display: inline-flex;
+ padding: 6px 15px;
+ border-radius: 7px;
+ border: 2px solid #2F80ED;
+ background:  #2F80ED;
+ position: absolute;
+     top: -1rem;
+     transform: translateX(-50%);
+     z-index: 10
+}
+table{
+    margin-top:0px;
+    width:350px;
+    height: 200px;
+}
+td{
+    margin-right:20px ;
+    margin-left: 20px;
+    text-align: left;
+    color:#2B2F34;
+font-family: ABeeZee;
+font-size: 16px;
+font-style: italic;
+font-weight: 500;
+
+   
+}
+tr{
+    border-bottom:1px solid rgba(0, 0, 0, 0.20) !important;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px;
+}
+.button-section>button{
+    width: 150px;
+    padding: 12px 6px;
+    color: #FFF;
+font-family: ABeeZee;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+}
+.button-section{
+    margin:10px;
+    padding-top:10px;
+}
+
+.card{
+    display: flex;
+    flex-direction: row !important;
+    background: #ECF8FF !important;
+    border: 1px solid rgba(0,0,0,.125);
+    gap:30px;
+}
+.course-offered{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ECF8FF;;
+    padding: 80px 0px 78px 0px;
+    width: 100%;
+}
+.learn{
+    text-align: center;
+font-family: ABeeZee;
+font-size: 20px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.6px;
+text-transform: uppercase;
+background:linear-gradient(277deg, #992FED 0%, #2F80ED 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.our-course{
+    color: #2F80ED;
+text-align: center;
+font-family: ABeeZee;
+font-size: 34px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 54px */
+letter-spacing: -0.54px;
+}
+.button-section>button:hover{
+    opacity: 0.5;
+}
+.hiring-partners{
+    background: #FFF;
+    padding: 50px;
+}
+.hiring-1{
+    text-align: center;
+font-family: ABeeZee;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 1.28px;
+background: linear-gradient(277deg, #992FED 0%, #2F80ED 100%);
+background-clip: text;
+margin-bottom: 10px;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+width: 100%;
+}
+.hiring-2{
+    color: #2B2F34;
+text-align: center;
+font-family: ABeeZee;
+font-size: 42px;
+font-style: italic;
+font-weight: 400;
+width: 100%;
+
+}
+.hiring-3{
+    color:  #595959;
+font-size: 18px;
+font-family: ABeeZee;
+font-style: normal;
+font-weight: 400;
+line-height: 130%; /* 23.4px */
+letter-spacing: 0.36px;
+text-align: center;
+margin-top: 10px;
+width: 100%;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap:30px ;
+    grid-template-columns: repeat(6,1fr);
+   
+    margin:50px;
+    width:200px;
+    margin-left: 10rem;
+}
+.place{
+    display: flex;
+    justify-content: center;
+}
+.place>button{
+border-radius: 8px;
+background:#2F80ED;
+color:#FFF;
+font-family: ABeeZee;
+font-size: 18px;
+font-style: italic;
+font-weight: 400;
+padding: 10px;
+border: none;
+transition: ;
+}
+.place>button:hover,.image:hover{
+    height: 50px;
+    transition: height 1s linear 1s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.wall{
+    color: var(--BLACK, #2B2F34);
+text-align: center;
+font-family: ABeeZee;
+font-size: 42px;
+font-style: italic;
+font-weight: 500;
+
+}
+.alumni{
+    color: var(--textlabelcolorscharcoal, #595959);
+    text-align: center;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+font-family: ABeeZee;
+}
+.student-card{
+    width:350px;
+    border:2px solid blue;
+    margin:10px;
+    border-radius: 10px;
+border: 2px solid #D7D7D7;
+background: #FFF;
+box-shadow: 5px 9px 40px 0px rgba(0, 0, 0, 0.08);
+padding: 20px;
+    
+}
+.card-body{
+    color: #676767;
+font-size: 16px;
+font-weight: 400;
+}
+.card-footer{
+    color: #676767;
+font-size: 12px;
+font-weight: 400;
+background-color:#FFF !important;
+}
+.photo-gallery{
+    display:flex;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.wall-love{
+    background-color: #FFFFFF;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+.hero-section>button{
+    position: absolute;
+    left:110px;
+    top:600px;
+    display: inline-flex;
+    padding: 6px 15px;
+    border-radius: 23px;
+    background: #FFF;
+    box-shadow: 2px 4px 40px 0px rgba(0, 0, 0, 0.12) !important;
+     z-index: 15;
+    font-size: 14px;
+font-style: normal;
+font-weight: 400;
+border:none;
+}
+.hero-section>button:hover{
+   opacity: 0.7;
+   background-color: #dad3d3;
+}
+
+.learn,.our-course{
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .grid-wrapper{
+        display: grid;
+        grid-gap:10px ;
+        grid-template-columns: repeat(4,1fr);
+       margin-left:15rem;
+    }
+    .about-hiring,.place{
+     margin-left: 30rem;
+
+    }
+    .wall-love{
+        margin-left: 20rem;
+    }
+    .hero-section>button{
+        margin-left: 15rem;
+    }
+    .course-offered{
+        margin-left: 10rem;
+    }
+    .hero-section{
+        margin-top: 5rem;
+        margin-left: 15rem;
+    }
+    .hero-section>img{
+        width: 100vw;
+        height: 80vh;
+        
+    }
+    .student-card{
+        width:300px;
+    }
+    .nav-bar,.navigation.{
+        margin:0px;
+        padding: 0px;
+        display: none;
+    }
+    
+}
