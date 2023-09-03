@@ -39,7 +39,9 @@ border-radius: 8px;
 border: 2px solid #2F80ED;
 background-color: transparent;
 }
-
+.nav-items>ul>li:hover{
+    opacity: 0.5;
+}
 header{
     position: fixed;
     width: 100%;
